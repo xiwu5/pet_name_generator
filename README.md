@@ -2,19 +2,19 @@ Part 1 - Setup
 
 1. Clone the Pet Name Generator Repo
 2. Create your venv
-3. Install your requirements.txt
-4. Create a database in psql called pet_name_gen_dev
-5. Create your .env file and add pet_name_gen_dev as the SQLALCHEMY_DATABASE_URI.
-6. Run your flask db init and flask db upgrade
-7. If you want, check your database to make sure it has the pet relation
+3. Install your `requirements.txt`
+4. Create a database in psql called `pet_name_gen_dev`
+5. Create your `.env` file and add `pet_name_gen_dev` as the `SQLALCHEMY_DATABASE_URI`.
+6. Run your `flask db init` and `flask db upgrade`
+7. If you want, check your database to make sure it has the `pet` relation
 
-Part 2 - Install OpenAI
+Part 2 - Install the Gemini API package (refer to Learn)
 
-1. Install the Gemini API python library using pip
-2. Run the command pip freeze > requirements.txt to add Gemini to the requirements.txt file
-3. Add your Gemini Secret key to your .env file
-4. Import `google.generativeai` into your pet_routes.py file
-5. Create an Gemini client in your pet_routes.py file
+1. Install the Gemini API python library
+2. Run the command `pip freeze > requirements.txt` to add Gemini to the `requirements.txt` file
+3. Add your Gemini Secret key to your `.env` file
+4. Import `genai` into your `pet_routes.py` file
+5. Create an Gemini client in your `pet_routes.py` file
 
 Part 3 - Write Your Pet Name POST Route
 	
