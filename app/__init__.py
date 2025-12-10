@@ -1,8 +1,12 @@
 import os
 from flask import Flask
+from dotenv import load_dotenv
 from .routes.pet_routes import bp as pets_bp
 from .db import db, migrate
 from .models import pet
+
+# Load environment variables from .env file
+load_dotenv()
 
 def create_app(config=None):
     # __name__ stores the name of the module we're in
